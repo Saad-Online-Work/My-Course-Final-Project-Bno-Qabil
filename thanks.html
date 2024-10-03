@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/folders/htmlfolder/cssfolder/thanks.css">
+    <title>Thank You</title>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="floral-background">
+            <h1>Thank You for Registering!</h1>
+            <p>Your registration was successful.</p>
+            <button id="generateIDCard">Generate ID Card</button>
+            <div id="idCard" style="display:none;">
+                <h2>ID Card</h2>
+                <p>Name: <span id="studentName"></span></p>
+                <p>Email: <span id="studentEmail"></span></p>
+                <p>Phone: <span id="studentPhone"></span></p>
+                <p>Course: <span id="studentCourse"></span></p>
+            </div>
+        </div>
+    </div>
+<script src="/folders/htmlfolder/cssfolder/thanks.js"></script>
+    <script>
+        // Assuming data is passed from the registration form
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('studentName').innerText = params.get('name');
+        document.getElementById('studentEmail').innerText = params.get('email');
+        document.getElementById('studentPhone').innerText = params.get('phone');
+        document.getElementById('studentCourse').innerText = params.get('course');
+
+        document.getElementById('generateIDCard').addEventListener('click', function() {
+            document.getElementById('idCard').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

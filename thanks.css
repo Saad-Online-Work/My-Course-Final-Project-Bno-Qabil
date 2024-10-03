@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.thank-you-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.floral-background {
+    background: url('/images\ \(1\).jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#idCard {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: black;
+}

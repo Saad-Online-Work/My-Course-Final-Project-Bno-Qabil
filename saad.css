@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e9ecef;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/image.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 100px 20px;
+    text-align: end;
+    
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.hero h2 {
+font-size: 2.5em;
+margin-bottom: 10px;
+text-align: end;
+}
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #fff;
+    color: #28a745;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background: #e9ecef;
+    color: #28a745;
+}
+
+/* About Courses Section */
+.about-courses {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.course-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.course {
+    background: #e7f9e7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px; /* Increased width for better content display */
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Resources Section */
+.resources {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin: 10px 0;
+}
+
+/* Call to Action Section */
+.cta {
+    background: #28a745;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cta button {
+    padding: 10px 20px;
+    background: white;
+    color: #28a745;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta button:hover {
+    background: #e9ecef;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .course-types {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course {
+        width: 90%; /* Adjust for smaller screens */
+    }
+
+    .hero {
+        padding: 50px 20px; /* Less padding for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Responsive font size */
+    }
+}
